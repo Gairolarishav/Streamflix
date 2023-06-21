@@ -1,0 +1,98 @@
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image: url('/static/img/bg2.svg');
+}
+
+.about-us{
+    padding: 0px 59px;
+    margin-top: 7%;
+    width: 100%;
+}
+
+.aboutus-title{
+    width: 100%;
+    color: white;
+}
+
+.about-us .card-header{
+    border-bottom:1px solid white !important;
+}
+
+.about-us .card .card-header h3{
+    color: white;
+    font-size: 1.2rem;
+}
+.about-us .card p{
+    color: rgba(179, 177, 177, 0.746);
+}
+
+@media only screen and (max-width:768px) {
+    .about-us{
+        margin-top: 10%;
+        padding: 0px 20px;
+    }
+    
+    .aboutus-title{
+        width: 100%;
+        color: white;
+    }
+    
+    .about-us .card-header{
+        border-bottom:1px solid white !important;
+    }
+    
+    .about-us .card .card-header h3{
+        font-size: 1rem;
+    }
+    .about-us .card .card-body h2{
+        font-size: 1.2rem;
+    }
+    .about-us .card .d-flex a{
+        height: 34px !important;
+        font-size: 0.8rem;
+    }
+    .about-us .card p{
+        color: rgba(179, 177, 177, 0.746);
+        font-size: 0.8rem;
+    }
+ }
+@media only screen and (max-width:460px) {
+    .about-us{
+        margin-top: 15%;
+        padding: 0px 20px;
+    }
+    
+    .aboutus-title{
+        width: 100%;
+        color: white;
+    }
+    .aboutus-title h2{
+        font-size: 1.5rem;
+    }
+    
+    
+    .about-us .card .card-header h3{
+        font-size: 0.8rem;
+        padding-left: 10px !important;
+    }
+    .about-us .card .card-body h2{
+        font-size: 0.9rem;
+    }
+    .about-us .card .d-flex a{
+        height: 34px !important;
+        font-size: 0.8rem;
+    }
+    .about-us .card p{
+        color: rgba(179, 177, 177, 0.746);
+        font-size: 0.7rem;
+    }
+ }
+@media only screen and (max-width:340px) {
+    .about-us{
+        margin-top: 20% !important;
+        padding: 0px 20px;
+    }
+    
+ }

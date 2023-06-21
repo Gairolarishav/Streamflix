@@ -1,0 +1,51 @@
+.feature-box1{
+    margin-top: 8%;
+    padding-left: 3% !important;
+}
+
+.features1{
+    display: flex;
+    width: 100%;
+}
+
+.feature-list1{
+    width: 58%;
+    border-right: 1px solid white;
+}
+.streamflix-phone{
+    width: 42%;
+}
+
+@media only screen and (max-width:700px) {
+    .streamflix-phone{
+        display: none;
+    }
+    .feature-list1{
+        border-right: none;
+        width: 100%;
+    }
+    .features1{
+        margin-left: 0px !important;
+
+    }
+    .feature-list1 .align-items-start{
+        padding-left: 0% !important;
+        padding-right: 0% !important;
+    }
+    .feature-box1{
+        margin-top: 20%;
+    }
+    .feature-box1 h2{
+        font-size: 1.5rem !important;
+    }
+    .feature-box1 .text-white{
+        font-size: 1.2rem !important;
+    }
+    .feature-list1 div div h4{
+        font-size: 1rem;
+    }
+    .feature-list1 div div p{
+        font-size: 0.8rem;
+    }
+
+ }

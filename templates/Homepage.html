@@ -1,0 +1,365 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="/static/css/navbar.css">
+    <link rel="stylesheet" href="/static/css/navresponsive.css">
+    <link rel="stylesheet" href="/static/css/homepage.css">
+    <link rel="stylesheet" href="/static/css/responsive.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>{{title}}</title>
+</head>
+
+<body>
+    <!-- streamflix Navbar -->
+
+    <nav class="navbar navbar-expand-lg streamflix-navbar streamflix-padding-left streamflix-padding-right">
+        <div calss="container-fluid"></div>
+        <div class="streamflix-row">
+            <!-- left -->
+            <section class="left d-flex align-items-center">
+                <a class="navbar-brand" href="{% url 'homepage' %}">
+                    <img src="/static/img/transparent.png" alt="">
+                </a>
+
+                <!-- dropdown -->
+                <div class="streamflix-dropdown-box dropdown">
+                    <button class="streamflix-dropdown dropdown-toggle" type="button" id="dropdownMenuButton"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Browse
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <li><a class="dropdown-item" href="{% url 'homepage' %}">Home</a></li>
+                        <li><a class="dropdown-item" href="{% url 'aboutus' %}">About us</a></li>
+                        <li><a class="dropdown-item" href="{% url 'feature' %}">Features</a></li>
+                    </ul>
+                </div>
+
+                <!--  tabs -->
+                <div class="streamflix-nav">
+                    <section>
+                        <a href="{% url 'homepage' %}"><button>Home</button></a>
+                        <a href="{% url 'aboutus' %}"><button>About us</button></a>
+                        <a href="{% url 'feature' %}"><button>Features</button></a>
+                    </section>
+                </div>
+            </section>
+
+            <!-- right -->
+            <section class="right">
+                <!-- <i class="bi bi-search"></i> -->
+                {% for link in links %}
+                <a href="{{ link.downloadlink }}"><button type="button" class="btn btn-danger">Download</button></a>
+                {% endfor %}
+                <!-- <a href="{% url 'signin' %}"><button type="button" class="btn btn-danger">Logout</button></a> -->
+            </section>
+
+        </div>
+        </div>
+    </nav>
+    <!-- streamflix navbar--end -->
+    <!-- Video contents -->
+    <div class="">
+        <section class="streamflix-home-video">
+            <div class="top"></div>
+            <div class="bottom"></div>
+            <video src="/static/video/video.mp4" autoplay muted loop></video>
+            <div>
+                <div class="content">
+                    <p class="detail1">Unlimited Movies, TV Shows and More.</p>
+                    <h1>The Best Streaming Platform​</h1>
+                    <h2>Play & Chill mode​</h2>
+                    <p class="detail2">READY TO ENTERTAIN YOUR SELF?​</p>
+                    <div class="mt-2 d-flex video-btn">
+                        {% for link in links %}
+                        <a class="download-btn" href="{{ link.downloadlink }}"><button type="button" class="btn btn-light mr-2"><i
+                                    class="bi bi-cloud-arrow-down"
+                                    style="color: black;font-size:15px;padding-right:5px;padding-top:0px;padding-left:0px;padding-bottom:0px;"></i>Download</button></a>
+                        <a class="download-btn" href="{{ link.telegramlink }}"><button type="button" class="btn btn-danger mr-2"><i
+                                    class="bi bi-telegram"
+                                    style="font-size:15px;padding-right:5px;padding-top:0px;padding-left:0px;padding-bottom:0px;"></i>Join
+                                Telegram</button></a>
+                        {% endfor %}
+                    </div>
+
+                    <!-- slider -->
+                    <div class="slider-box1">
+                        <section>
+                            <h4>Action</h4>
+                            <div class="cards1">
+                                {% for action in actions %}
+                                <a href="{{ action.imagelink }}" class="card1">
+                                    <img src="{{ action.image }}"
+                                        alt="" class="poster1">
+                                </a>
+                                {% endfor %}
+                            </div>
+                            <div class="cards-btn d-flex">
+                                <h4>Click On Download Button To Watch Movies And Series</h4>
+                                {% for link in links %}
+                                <a class="card-btn" href="{{ link.downloadlink }}"><button type="button" class="btn btn-danger mr-3">Download</button></a>
+                                {% endfor %}
+                            </div>
+                        </section>
+                    </div>
+                    <div class="slider-box2">
+                        <section>
+                            <h4>Anime</h4>
+                            <div class="cards2">
+                                {% for anime in animes %}
+                                <a href="{{ anime.imagelink }}" class="card2">
+                                    <img src="{{ anime.image }}"
+                                        alt="" class="poster2">
+                                </a>
+                                {% endfor %}
+                            </div>
+                            <div class="cards-btn d-flex">
+                                <h4>Click On Download Button To Watch Movies And Series</h4>
+                                {% for link in links %}
+                                <a class="card-btn" href="{{ link.downloadlink }}"><button type="button" class="btn btn-danger mr-3">Download</button></a>
+                                {% endfor %}
+                            </div>
+                        </section>
+                    </div>
+                    <div class="slider-box3">
+                        <section>
+                            <h4>Horror</h4>
+                            <div class="cards3">
+                            {% for horror in horrors %}
+                                <a href="{{ horror.imagelink }}" class="card3">
+                                    <img src="{{ horror.image }}"
+                                        alt="" class="poster3">
+                                </a>
+                                {% endfor %}
+                            </div>
+                            <div class="cards-btn d-flex" style="justify-content: space-between;">
+                                <h4>Click On Download Button To Watch Movies And Series</h4>
+                                {% for link in links %}
+                                <a class="card-btn" href="{{ link.downloadlink }}"><button type="button" class="btn btn-danger mr-3">Download</button></a>
+                                {% endfor %}
+                            </div>
+                        </section>
+                    </div>
+                    <div class="slider-box4">
+                        <section>
+                            <h4>Romance</h4>
+                            <div class="cards4">
+                            {% for romance in romances %}
+                                <a href="{{ romance.imagelink }}" class="card4">
+                                    <img src="{{ romance.image }}"
+                                        alt="" class="poster4">
+                                </a>
+                                {% endfor %}
+                            </div>
+                            <div class="cards-btn d-flex" style="justify-content: space-between;">
+                                <h4>Click On Download Button To Watch Movies And Series</h4>
+                                {% for link in links %}
+                                <a class="card-btn" href="{{ link.downloadlink }}"><button type="button" class="btn btn-danger mr-3">Download</button></a>
+                                {% endfor %}
+                            </div>
+                        </section>
+                    </div>
+                    <!-- slider--end -->
+
+                </div>
+        </section>
+    </div>
+    <!-- Video contents--end -->
+
+    <!-- features -->
+    <img decoding="async" class="wp-block-cover__image-background wp-image-7248" alt=""
+        src="https://streamflix.in/wp-content/themes/greenshift/assets/img/bg2.svg" data-object-fit="cover" style="max-width: 100%;">
+    <div class="container py-5 feature-box" id="icon-grid">
+        <h2
+            style="background: linear-gradient(to right, #f32170, #ff6b08,#cf23cf, #eedd44);-webkit-text-fill-color: transparent;-webkit-background-clip: text;font-size: 2.5rem;">
+            Unique Features</h2>
+        <h2 class="pb-2 border-bottom text-white">Of Streamflix</h2>
+        <div class="row-cols-1 g-4 py-3 text-white" style="margin-left: -45px;">
+            <div class="feature-list">
+                <div class="col d-flex align-items-start">
+                    <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em">
+                        <use xlink:href="#bootstrap"></use>
+                    </svg>
+                    <div>
+                        <h4 class="fw-bold mb-0" style="background: linear-gradient(to right, #21e2f3, #ff6b08, #cf23cf, #09b5cc);
+              -webkit-text-fill-color: transparent;
+              -webkit-background-clip: text;">1.</h4>
+                        <h4 class="fw-bold mb-0">User Friendly UI</h4>
+                        <p>You will get smooth experience and user friendly UI.</p>
+                    </div>
+                </div>
+                <div class="col d-flex align-items-start">
+                    <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em">
+                        <use xlink:href="#cpu-fill"></use>
+                    </svg>
+                    <div>
+                        <h4 class="fw-bold mb-0" style="background: linear-gradient(to right, #21e2f3, #ff6b08, #cf23cf, #09b5cc);
+               -webkit-text-fill-color: transparent;
+               -webkit-background-clip: text;">2.</h4>
+                        <h4 class="fw-bold mb-0">Detailed content</h4>
+                        <p>Forget about find content information you will get every thing in one place that is on
+                            StreamFlix.</p>
+                    </div>
+                </div>
+                <div class="col d-flex align-items-start">
+                    <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em">
+                        <use xlink:href="#calendar3"></use>
+                    </svg>
+                    <div>
+                        <h4 class="fw-bold mb-0" style="background: linear-gradient(to right, #21e2f3, #ff6b08, #cf23cf, #09b5cc);
+              -webkit-text-fill-color: transparent;
+              -webkit-background-clip: text;">3.</h4>
+                        <h4 class="fw-bold mb-0">Downloading and streaming</h4>
+                        <p>Enjoy your shows to watch offline..</p>
+                    </div>
+                </div>
+                <div class="col d-flex align-items-start">
+                    <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em">
+                        <use xlink:href="#home"></use>
+                    </svg>
+                    <div>
+                        <h4 class="fw-bold mb-0" style="background: linear-gradient(to right, #21e2f3, #ff6b08, #cf23cf, #09b5cc);
+              -webkit-text-fill-color: transparent;
+              -webkit-background-clip: text;">4.</h4>
+                        <h4 class="fw-bold mb-0">Enjoy your shows to watch offline.​</h4>
+                        <p>Save your favourites contents easily and always have something to watch.</p>
+                    </div>
+                </div>
+                <div class="col d-flex align-items-start">
+                    <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em">
+                        <use xlink:href="#speedometer2"></use>
+                    </svg>
+                    <div>
+                        <h4 class="fw-bold mb-0" style="background: linear-gradient(to right, #21e2f3, #ff6b08, #cf23cf, #09b5cc);
+              -webkit-text-fill-color: transparent;
+              -webkit-background-clip: text;">5.</h4>
+                        <h4 class="fw-bold mb-0">Optimize flow</h4>
+                        <p>Easily change your lists and full control on your previous watch content also supported
+                            background playing.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="streamflix-phone" style="max-width: 75%;"><img  src="/static/img/Untitled Project (1).png" alt="" style="height: 100%;width: 100%;"></div>
+        </div>
+    </div>
+ <!-- feature end -->
+
+
+    <!-- Footer -->
+    <div class="footer">
+        <footer class="text-center text-lg-start text-white" style="background-color: #000000;opacity:0.95;">
+            <!-- Section: Social media -->
+            <section class="d-flex justify-content-between p-2" style="background-color: #472ce6;opacity: 0.9;">
+                <!-- Left -->
+                <div class="me-5">
+                    <span style="font-weight: 700;font-size: 20spx;margin-left: 15px;">Get connected with us on social
+                        networks:</span>
+                </div>
+                <!-- Left -->
+
+                <!-- Right -->
+                <div class="ml-3">
+                    {% for link in links %}
+                    <a href="{{ link.facebooklink }}" class="text-white me-4">
+                        <i class="bi bi-facebook mr-3" style="font-size: 25px;"></i>
+                    </a>
+                    <a href="{{ link.instagramlink }}" class="text-white me-4">
+                        <i class="bi bi-instagram mr-3" style="font-size: 25px;"></i>
+                    </a>
+                    <a href="{{ link.twitterlink }}" class="text-white me-4">
+                        <i class="bi bi-twitter mr-3" style="font-size: 25px;"></i>
+                    </a>
+                    {% endfor %}
+                </div>
+                <!-- Right -->
+            </section>
+            <!-- Section: Social media -->
+
+            <!-- Section: Links  -->
+            <section class="">
+                <div class="container text-center text-md-start mt-5">
+                    <!-- Grid row -->
+                    <div class="row mt-3">
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                            <!-- Content -->
+                            <h6 class="text-uppercase fw-bold">Streamflix</h6>
+                            <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                                style="width: 60px; background-color: #7c4dff; height: 2px" />
+                            <p>
+                                Streamflix is a streaming service that offers a wide variety of award-winning TV shows,
+                                movies, anime, documentaries and more - on thousands of internet-connected devices.
+                            </p>
+                        </div>
+
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold">About Us</h6>
+                            <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                                style="width: 60px; background-color: #7c4dff; height: 2px" />
+                            <p>
+                                <a href="{% url 'feature' %}" class="text-white">Features</a>
+                            </p>
+                            <p>
+                                <a href="{% url 'termsandservices' %}" class="text-white">Terms of Services</a>
+                            </p>
+                            <p>
+                                <a href="{% url 'privacy' %}" class="text-white">Privacy Policy</a>
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold">Contact</h6>
+                            <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                                style="width: 60px; background-color: #7c4dff; height: 2px" />
+                            <p>New York, NY 10012, US</p>
+                            <p>support@streamflix.in</p>
+                            <p>+ 01 234 567 88</p>
+                            <p>+ 01 234 567 89</p>
+                        </div>
+                        <!-- Grid column -->
+                    </div>
+                    <!-- Grid row -->
+                </div>
+            </section>
+            <!-- Section: Links  -->
+
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+                © 2020 Copyright:
+                <a class="text-white" href="https://mdbootstrap.com/">Streamflix.in</a>
+            </div>
+            <!-- Copyright -->
+        </footer>
+        <!-- Footer -->
+
+    </div>
+
+    <!-- Optional JavaScript -->
+    <script src="/static/javascript/javascript.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

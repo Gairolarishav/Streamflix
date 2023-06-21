@@ -1,0 +1,227 @@
+
+@media only screen and (max-width:767.98px) {
+    .navbar-brand img {
+      width: 43px;
+    }
+
+    .streamflix-padding-left{
+        padding-left: 10px !important;
+    } 
+    
+    .streamflix-padding-left{
+        padding-right: 10px !important;
+    }
+
+    .streamflix-dropdown-box{
+        display: block !important;
+   }
+   .streamflix-nav{
+    display: none;
+   }
+   .streamflix-dropdown{
+    padding: 0px 5px;;
+}
+}
+@media only screen and (min-width:1800px) {
+    .navbar-brand img {
+      width: 100px !important;
+      height:100px !important;
+      display: flex !important;
+      
+    }
+    .streamflix-nav button{
+      font-size: 25px !important;
+    }
+    .right button {
+        font-size: 2rem ;
+        margin-right: 20px;
+    }
+    .streamflix-home-video {
+        width: 100.78% !important;
+    }
+    .streamflix-home-video .content .detail1 {
+        margin-left: 40px !important;
+        font-size: 2.5rem !important;
+    }
+    .streamflix-home-video .content h1 {
+        margin-left: 30px !important;
+        font-size: 6rem !important;
+    }
+    .streamflix-home-video .content h2 {
+        margin-left: 40px !important;
+        font-size: 60px !important;
+    }
+    .streamflix-home-video .content .detail2 {
+        margin-left: 40px !important;
+        margin-top: 47px !important;
+        font-size: 30px;
+    }
+    .video-btn {
+        margin-left: 25px !important;
+    }
+    .download-btn button{
+        font-size: 2rem;
+        margin-left: 1rem;
+    }
+    .download-btn button i{
+        font-size: 2rem !important;
+    }
+    .slider-box1 section h4 {
+       margin-left: 35px !important;
+       font-size: 2.5rem;
+    }
+    .slider-box2 section h4 {
+       margin-left: 35px !important;
+       font-size: 2.5rem;
+    }
+    .slider-box3 section h4 {
+       margin-left: 35px !important;
+       font-size: 2.5rem;
+    }
+    .slider-box4 section h4 {
+       margin-left: 35px !important;
+       font-size: 2.5rem;
+    }
+    .slider-box1 section .cards1 {
+        height: 200px !important;
+    }
+    .slider-box2 section .cards2 {
+        height: 200px !important;
+    }
+    .slider-box3 section .cards3 {
+        height: 200px !important;
+    }
+    .slider-box4 section .cards4 {
+        height: 200px !important;
+    }
+    .slider-box1 section .cards1 .card1 {
+        min-width: 153px !important;
+        height: 180px !important;
+        margin-left: 35px !important;
+    }
+    .slider-box2 section .cards2 .card2 {
+        min-width: 153px !important;
+        height: 180px !important;
+        margin-left: 35px !important;
+    }
+    .slider-box3 section .cards3 .card3 {
+        min-width: 153px !important;
+        height: 180px !important;
+        margin-left: 35px !important;
+    }
+    .slider-box4 section .cards4 .card4 {
+        min-width: 153px !important;
+        height: 180px !important;
+        margin-left: 35px !important;
+    }
+    .slider-box2 {
+        margin-top: 390px !important;
+    }
+    .slider-box3 {
+        margin-top: 740px !important;
+    }
+    .slider-box4 {
+        margin-top: 1090px !important;
+    }
+   img{
+        display: none !important;
+    }
+   .card1 img{
+        display: flex !important;
+    }
+    .card2 img{
+        display: flex !important;
+    }
+    .card3 img{
+        display: flex !important;
+    }
+    .card4 img{
+        display: flex !important;
+    }
+    .streamflix-phone img{
+        display: flex !important;
+        height: 90% !important;
+        width: 80% !important;
+    }
+    .feature-box {
+        top: 0px !important;
+        margin-top: 800px !important;
+    }
+    .feature-box h2 {
+        font-size: 3.5rem !important;
+    }
+    .feature-list div div h4 {
+        font-size: 2.5rem !important;
+    }
+    .feature-list div div p {
+        font-size: 2.4rem !important;
+    }
+    .footer {
+        top: 0px !important;
+        width: 100.69%;
+    }
+
+}
+
+/* all responsive code */
+
+
+@media only screen and (max-width:768px) {
+    i{
+     font-size: 15px;
+    }
+    .right button{
+        margin-left: 3px !important;
+        font-size: 0.7rem;
+       }
+ }
+ 
+ 
+ @media only screen and (max-width:560px) {
+     i {
+         font-size: 13px !important;
+     }
+  }
+ 
+  @media only screen and (max-width:500px) {
+     i {
+         font-size: 11px;
+     }
+  }
+ 
+  @media only screen and (max-width:425px) {
+     i {
+         font-size: 10px !important;
+     }
+  }
+  @media only screen and (max-width:400px) {
+    .right button{
+        margin-left: 2px !important;
+        font-size: 0.6rem;
+        padding: 0.375rem 0.4rem;
+       }
+  }
+
+ @media (min-width: 1200px){
+  .container, .container-lg, .container-md, .container-sm, .container-xl {
+      max-width: 100% !important;
+      position: relative;
+  }
+ 
+ }
+ @media (min-width: 992px){
+  .container, .container-lg, .container-md, .container-sm, .container-xl {
+      max-width: 100% !important;
+  }
+ }
+ @media (min-width: 768px){
+  .container, .container-lg, .container-md, .container-sm, .container-xl {
+      max-width: 100% !important;
+  }
+ }
+ @media (min-width: 576px){
+  .container, .container-lg, .container-md, .container-sm, .container-xl {
+      max-width: 100% !important;
+  }
+ }
+

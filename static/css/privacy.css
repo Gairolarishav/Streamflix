@@ -1,0 +1,70 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image: url('/static/img/bg2.svg');
+}
+  
+.wp-image-7246{
+    position: absolute;
+}
+
+.title{
+    padding: 0px 59px;
+    margin-top: 7%;
+    width: 100%;
+}
+
+.title h1{
+    color: white;
+    font-size: 2rem;
+    padding-top: 25px;
+}
+
+.title p{
+    color: rgb(121, 117, 117);
+    font-size: 1rem;
+    border-bottom: 1px solid white;
+    padding-bottom: 36px;
+}
+.title h3{
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+    padding-top: 10px;
+}
+.title li{
+    color: rgb(121, 117, 117);
+    font-size: 1rem;
+    padding-top: 10px;
+}
+
+.footer{
+   margin-top: 10%;
+}
+a{
+    word-wrap: break-word;
+}
+
+
+@media only screen and (max-width:560px) {
+    .title h1{
+        font-size: 1rem;
+    }
+    .title p{
+        font-size: 0.8rem;
+    }
+    .title h3{
+        font-size: 0.8rem;
+        padding-bottom: 0px !important;
+    }
+    .title{
+        margin-top: 15%;
+        padding: 0px 10px;
+    }
+    .title-para{
+        padding-bottom: 5px !important;
+    } 
+    .title li{
+        font-size: 0.8rem;
+    }
+ }

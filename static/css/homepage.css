@@ -1,0 +1,301 @@
+
+/* video */
+.streamflix-home-video{
+    width:100%;
+    position: relative;
+    z-index: 10;
+}
+
+.streamflix-home-video video{
+    width:100%;
+    height: 100%;
+}
+
+.streamflix-home-video .top{
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    height: 40px;
+    background: linear-gradient(to top,transparent,#000);
+}
+
+.streamflix-home-video .bottom{
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    height: 30px;
+    background: linear-gradient(to bottom,transparent,#141414);
+}
+
+.streamflix-home-video .content{
+    position: absolute;
+    top:28%;
+    color:white;
+    width: 100%;
+}
+
+.streamflix-home-video .content .detail1{
+    margin-left: 10px;
+    color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.streamflix-home-video .content h1{
+    margin-left: 10px;
+    font-size: 50px;
+}
+
+.streamflix-home-video .content h2{
+    margin-left: 10px;
+    font-size: 45px;
+}
+
+.streamflix-home-video .content .detail2{
+    margin-left: 10px;
+    margin-top: 30px !important;
+} 
+
+
+.streamflix-home-video .content h2{
+    background: -webkit-linear-gradient(rgb(255, 9, 202), rgb(212, 4, 4));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+} 
+
+.video-btn{
+    margin-left: 10px;
+}
+/* video end */
+
+.slider-box1{
+    margin-top: 50px;
+}
+
+.slider-box1 section{
+  position: absolute;
+  width: 100%;
+  height: auto;
+  padding: 0px 0px 0px 10px;
+  color: white;
+
+}
+
+.slider-box1 section h4{
+    margin-bottom: 0px;
+}
+
+.slider-box1 section .cards1{
+  position: relative;
+  width: 100%;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  overflow-x: auto;
+
+}
+
+.slider-box1 section .cards1::-webkit-scrollbar{
+  display: none;
+}
+
+.slider-box1 section .cards1 .card1{
+  position: relative;
+  min-width: 110px;
+  height: 136px;
+  border-radius: 8px;
+  margin-right: 10px;
+  background: #000;
+  transition: .3s linear;
+
+}
+
+.slider-box1 section .cards1 .card1 .poster1{
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  position: relative;
+}
+
+.slider-box2{
+    margin-top: 290px;
+}
+
+.slider-box2 section{
+  position: absolute;
+  width: 100%;
+  height: auto;
+  padding: 0px 0px 0px 10px;
+  color: white;
+
+}
+
+.slider-box2 section h4{
+    margin-bottom: 0px;
+}
+
+.slider-box2 section .cards2{
+  position: relative;
+  width: 100%;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  overflow-x: auto;
+
+}
+
+.slider-box2 section .cards2::-webkit-scrollbar{
+  display: none;
+}
+
+.slider-box2 section .cards2 .card2{
+  position: relative;
+  min-width: 110px;
+  height: 136px;
+  border-radius: 8px;
+  margin-right: 10px;
+  background: #000;
+  transition: .3s linear;
+
+}
+
+.slider-box2 section .cards2 .card2 .poster2{
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  position: relative;
+}
+
+.slider-box3{
+    margin-top: 535px;
+}
+
+.slider-box3 section{
+  position: absolute;
+  width: 100%;
+  height: auto;
+  padding: 0px 0px 0px 10px;
+  color: white;
+
+}
+
+.slider-box3 section h4{
+    margin-bottom: 0px;
+}
+
+.slider-box3 section .cards3{
+  position: relative;
+  width: 100%;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  overflow-x: auto;
+
+}
+
+.slider-box3 section .cards3::-webkit-scrollbar{
+  display: none;
+}
+
+.slider-box3 section .cards3 .card3{
+  position: relative;
+  min-width: 110px;
+  height: 136px;
+  border-radius: 8px;
+  margin-right: 10px;
+  background: #000;
+  transition: .3s linear;
+
+}
+
+.slider-box3 section .cards3 .card3 .poster3{
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  position: relative;
+}
+
+.slider-box4{
+    margin-top: 780px;
+}
+
+.slider-box4 section{
+  position: absolute;
+  width: 100%;
+  height: auto;
+  padding: 0px 0px 0px 10px;
+  color: white;
+
+}
+
+.slider-box4 section h4{
+    margin-bottom: 0px;
+}
+
+.slider-box4 section .cards4{
+  position: relative;
+  width: 100%;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  overflow-x: auto;
+
+}
+
+.slider-box4 section .cards4::-webkit-scrollbar{
+  display: none;
+}
+
+.slider-box4 section .cards4 .card4{
+  position: relative;
+  min-width: 110px;
+  height: 136px;
+  border-radius: 8px;
+  margin-right: 10px;
+  background: #000;
+  transition: .3s linear;
+
+}
+
+.slider-box4 section .cards4 .card4 .poster4{
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  position: relative;
+}
+
+.feature-box{
+    position: relative;
+    top: 505px;
+    margin-top: -1070px;
+    max-width: 100% !important;
+}
+
+.row-cols-1{
+    width: 59%;
+    display: flex;
+}
+
+.col div p{
+    color: #6f6f6f;
+}
+
+.feature-list{
+    border-right:1px solid white;
+}
+
+.cards-btn{
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.cards-btn h4{
+  font-size: 1rem;
+}
+
+.footer{
+  position: relative;
+  top: 500px;
+}
+
+
+
+
+

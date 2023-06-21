@@ -1,0 +1,448 @@
+/* all responsive code */
+
+
+@media only screen and (max-width:768px) {
+   .streamflix-home-video .bottom {
+    bottom: 34%;
+   }
+   .feature-box{
+    margin-top: -590px;
+   }
+   .streamflix-home-video .content .detail1 {
+    font-size: 13px;
+   }
+   .streamflix-home-video .content .detail2 {
+    font-size: 15px;
+   }
+   .streamflix-home-video .content h1 {
+    font-size: 30px;
+   }
+   .streamflix-home-video .content h2 {
+    font-size: 25px;
+   }
+    .download-btn button{
+        font-size: 0.7rem;
+        padding: 0.55rem 0.75rem;
+        line-height: 1.3;
+    }
+    .cards-btn h4{
+        font-size: 0.79rem !important;
+
+    }
+    .cards-btn button{
+        font-size: 11px;
+       line-height: 0.9rem;
+       margin-right: 0.3rem !important;
+    }
+}
+
+@media only screen and (max-width:630px) {
+    .streamflix-home-video .content .video-btn{
+      margin-top: -0.5rem !important;
+    }
+ }
+
+@media only screen and (max-width:560px) {
+    .streamflix-home-video .content .detail1 {
+     font-size: 10px;
+    }
+    .streamflix-home-video .content .detail2 {
+     font-size: 12px;
+    }
+    .streamflix-home-video .content h1 {
+     font-size: 22px;
+    }
+    .streamflix-home-video .content h2 {
+     font-size: 20px;
+    }
+    .streamflix-home-video .content .video-btn{
+      margin-top: -0.5rem !important;
+    }
+     .download-btn button {
+        font-size: 0.7rem;
+        padding: 0.475rem 0.4rem;
+        line-height: 0.5;
+    }
+ }
+
+ @media only screen and (max-width:500px) {
+    .streamflix-home-video .content .detail1 {
+     font-size: 9px;
+    }
+    .streamflix-home-video .content .detail2 {
+     font-size: 10px;
+     margin-top: 20px !important;
+    }
+    .streamflix-home-video .content h1 {
+     font-size: 17px;
+    }
+    .streamflix-home-video .content h2 {
+     font-size: 16px;
+    }
+     .download-btn button {
+        font-size: 0.7rem;
+        padding: 0.435rem 0.3rem;
+        line-height: 0.4;
+    }
+ }
+
+ @media only screen and (max-width:425px) {
+    .streamflix-home-video .content .detail1 {
+     font-size: 9px;
+    }
+    .streamflix-home-video .content .detail2 {
+     font-size: 10px;
+     margin-top: 15px !important;
+    }
+    .streamflix-home-video .content h1 {
+     font-size: 17px;
+    }
+    .streamflix-home-video .content h2 {
+     font-size: 16px;
+    }
+     .download-btn button {
+     font-size: 0.55rem;
+     padding: 0.435rem 0.3rem;
+     line-height: 0.3;
+    }
+ }
+
+@media only screen and (max-width:400px) {
+    .streamflix-home-video .content {
+        top: 35%;
+    }
+    .streamflix-home-video .content .video-btn{
+        margin-top: -0.9rem !important;
+      }
+    i{
+     font-size: 12px;
+    }
+    .download-btn button i{
+        font-size: 8px !important;
+        padding-right: 3px !important;
+    }
+    .streamflix-dropdown-box .dropdown-menu .dropdown-item{
+        width: 200px;
+    }
+    .streamflix-home-video .content h1 {
+        font-size: 14px;
+        margin-top:-10px !important;
+    }
+    .streamflix-home-video .content h2 {
+        margin-top: -4px;
+    }
+    .streamflix-home-video .content .detail1 {
+        font-size: 7px;
+    }
+    .streamflix-home-video .content .detail2 {
+        font-size: 7px;
+        margin-top: 12px !important;
+    }
+    .download-btn button {
+        font-size: 0.45rem;
+        padding: 0.25rem 0.2rem;
+    }
+ }
+
+@media only screen and (max-width:1440px) {
+    .streamflix-home-video .content {
+        position: relative;
+        top: -563px;
+    }
+    .feature-box{
+        margin-top: -1220px;
+     }
+     .wp-image-7248{
+        margin-top: -785px;
+     }
+     .streamflix-home-video .bottom {
+        bottom: 25%;
+    }
+ }
+@media only screen and (max-width:1380px) {
+    .feature-box{
+        margin-top: -1180px;
+     }
+ }
+@media only screen and (max-width:1380px) {
+    .feature-box{
+        margin-top: -1150px;
+     }
+ }
+@media only screen and (max-width:1300px) {
+    .feature-box{
+        margin-top: -1100px;
+     }
+ }
+@media only screen and (max-width:1240px) {
+    .streamflix-home-video .content {
+        position: relative;
+        top: -470px;
+    }
+    .feature-box{
+        margin-top: -970px;
+     }
+ }
+@media only screen and (max-width:1240px) {
+    .feature-box{
+        margin-top: -920px;
+     }
+     .streamflix-home-video .bottom {
+        bottom: 26%;
+    }
+ }
+@media only screen and (max-width:1110px) {
+    .streamflix-home-video .content {
+        position: relative;
+        top: -400px;
+    }
+    .feature-box{
+        margin-top: -1155px;
+     }
+     .wp-image-7248{
+        margin-top: -340px;
+     }
+     .streamflix-home-video .bottom {
+        bottom: 28%;
+    }
+ }
+@media only screen and (max-width:1000px) {
+    .feature-box{
+        margin-top: -1165px;
+     }
+ }
+@media only screen and (max-width:940px) {
+    .streamflix-home-video .content {
+        position: relative;
+        top: -300px;
+    }
+    .feature-box{
+        margin-top: -1010px;
+     }
+ }
+@media only screen and (max-width:870px) {
+    .feature-box{
+        margin-top: -950px;
+     }
+ }
+@media only screen and (max-width:800px) {
+    .feature-box{
+        margin-top: -870px;
+     }
+ }
+@media only screen and (max-width:760px) {
+    .feature-box{
+        margin-top: -855px;
+     }
+ }
+@media only screen and (max-width:740px) {
+    .feature-box{
+        margin-top: -850px;
+     }
+ }
+@media only screen and (max-width:700px) {
+    .feature-box{
+        margin-top: -800px;
+     }
+     .row-cols-1{
+        width: 107%;
+        border: none;
+    }
+    .streamflix-phone{
+        display: none;
+    }
+    .feature-list{
+        border-right: none;
+    }
+
+ }
+@media only screen and (max-width:650px) {
+    .streamflix-home-video .content {
+        position: relative;
+        top: -250px;
+    }
+    .feature-box{
+        margin-top: -720px;
+     }
+ }
+ @media only screen and (max-width:600px) {
+    .feature-box{
+        margin-top: -660px;
+     }
+ }
+ @media only screen and (max-width:550px) {
+    .feature-box{
+        margin-top: -600px;
+     }
+     .row-cols-1{
+        width: 109%;
+    }
+ }
+@media only screen and (max-width:560px) {
+    .streamflix-home-video .content {
+        position: relative;
+        top: -220px;
+    }
+ }
+@media only screen and (max-width:500px) {
+    .streamflix-home-video .content {
+        position: relative;
+        top: -189px;
+    }
+    .feature-box{
+        margin-top: -520px;
+     }
+ }
+@media only screen and (max-width:430px) {
+    .streamflix-home-video .content {
+        position: relative;
+        top: -175px;
+    }
+    .streamflix-home-video .bottom {
+        bottom: 39%;
+    }
+    .feature-box{
+        margin-top: -845px;
+     }
+     .wp-image-7248{
+        margin-top: 0px;
+     }
+     .row-cols-1{
+        width: 112%;
+    }
+    .slider-box1 {
+        margin-top: 29px;
+    }
+    .slider-box2 {
+        margin-top: 216px;
+    }
+    .slider-box3 {
+        margin-top: 416px;
+    }
+    .slider-box4 {
+        margin-top: 616px;
+    }
+    .slider-box1 section .cards1 .card1 {
+        min-width: 80px;
+        height: 100px;
+    }
+    .slider-box1 h4{
+        font-size:1rem;
+    }
+    .slider-box1 section .cards1{
+        height: 110px;
+    }
+    .slider-box2 section .cards2 .card2 {
+        min-width: 80px;
+        height: 100px;
+    }
+    .slider-box2 h4{
+        font-size:1rem;
+    }
+    .slider-box2 section .cards2{
+        height: 110px;
+    }
+    .slider-box3 section .cards3 .card3 {
+        min-width: 80px;
+        height: 100px;
+    }
+    .slider-box3 h4{
+        font-size:1rem;
+    }
+    .slider-box3 section .cards3{
+        height: 110px;
+    }
+    .slider-box4 section .cards4 .card4{
+        min-width: 80px;
+        height: 100px;
+    }
+    .slider-box4 h4{
+        font-size:1rem;
+    }
+    .slider-box4 section .cards4{
+        height: 110px;
+    }
+    .feature-box h2{
+        font-size: 1.3rem !important;
+    }
+    .feature-list .col div h4{
+            font-size: 1rem;
+ }
+}
+@media only screen and (max-width:400px) {
+    .streamflix-home-video .content {
+        position: relative;
+        top: -156px;
+    }
+ }
+@media only screen and (max-width:376px) {
+    .streamflix-home-video .content {
+        position: relative;
+        top: -135px;
+    }
+    .feature-box{
+        margin-top: -760px;
+     }
+     .streamflix-home-video .bottom {
+        bottom: 34%;
+    }
+    .slider-box2 {
+        margin-top: 223px;
+    }
+    .slider-box3 {
+        margin-top: 420px;
+    }
+    .slider-box4 {
+        margin-top: 615px;
+    }
+ }
+@media only screen and (max-width:325px) {
+    .streamflix-home-video .content {
+        position: relative;
+        top: -120px;
+    }
+    .feature-box{
+        margin-top: -720px;
+     }
+     .row-cols-1{
+        width: 115%;
+    }
+    .slider-box1 {
+        margin-top: 15px;
+    }
+    .streamflix-home-video .bottom {
+        bottom: 38%;
+    }
+    .slider-box2 {
+        margin-top: 210px;
+    }
+    .slider-box3 {
+        margin-top: 410px;
+    }
+    .slider-box4 {
+        margin-top: 610px;
+    }
+ }
+
+@media (min-width: 1200px){
+ .container, .container-lg, .container-md, .container-sm, .container-xl {
+     max-width: 100% !important;
+     position: relative;
+ }
+
+}
+@media (min-width: 992px){
+ .container, .container-lg, .container-md, .container-sm, .container-xl {
+     max-width: 100% !important;
+ }
+}
+@media (min-width: 768px){
+ .container, .container-lg, .container-md, .container-sm, .container-xl {
+     max-width: 100% !important;
+ }
+}
+@media (min-width: 576px){
+ .container, .container-lg, .container-md, .container-sm, .container-xl {
+     max-width: 100% !important;
+ }
+}

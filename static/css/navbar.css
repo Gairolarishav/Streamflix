@@ -1,0 +1,103 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    background-color: #141414 !important;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.streamflix-padding-left{
+    padding-left: 30px !important;
+} 
+
+.streamflix-padding-right{
+    padding-right: 30px !important;
+}
+
+.streamflix-navbar{
+    position: fixed !important;
+    width: 100%;
+    z-index:1000;
+    transition: background 0.2s linear;
+    padding-top: 0px !important;
+}
+
+.streamflix-row{
+    width: 100%;
+    display: flex;
+    justify-content: space-between !important;
+    align-items: center;
+}
+
+.navbar-brand img{
+     width: 65px;
+     align-items: center;
+     height: 45px;
+}
+
+.streamflix-dropdown-box{
+     display: none;
+     border: none;
+}
+
+.streamflix-dropdown{
+     background-color: transparent;
+     color: white;
+     border: none;
+     font-size: 10px;
+     padding: 0px 25px;
+     border: none;
+     outline: none !important;
+}
+
+.streamflix-dropdown-box .dropdown-menu{
+    background-color: rgba(0, 0, 0, 0.796) !important;
+    font-size: 9px !important;
+    color: white !important;
+    margin-left: -68px;
+    border-top: 3px solid white;
+    margin-top: 30px;
+}
+
+.streamflix-dropdown-box .dropdown-menu .dropdown-item{
+    color: rgba(255, 255, 255, 0.769);
+    text-align: center;
+    width: 250px;
+    font-size: 15px;
+    padding: 10px 20px;
+}
+
+.streamflix-dropdown-box .dropdown-menu .dropdown-item:hover{
+    background-color: rgba(39, 37, 37, 0.158);
+    color: white;
+}
+
+.streamflix-nav{
+    display: block;
+    align-items: center;
+}
+
+.streamflix-nav button{
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.619);
+    border: none;
+    font-size: 15px;
+    padding: 0px 20px
+}
+
+.streamflix-nav button:hover{
+    color: white;
+}
+
+i{
+  font-size: 20px;
+  color: white;
+  padding: 10px;
+}
+
+.right button{
+    margin-left: 10px;
+}

@@ -1,0 +1,79 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="about-us mb-5">
+          <div class="aboutus-title">
+             <h2 class="text-center"> About Us</h2>
+          </div>
+          <div class="card mt-5" style="background-color: #2b2828ad;">
+            <div class="card-header d-flex">
+              <h3>1.</h3>
+              <h3 class="px-5">What is Streamflix?</h3>
+            </div>
+            <div class="card-body">
+              <p class="card-text">Streamflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries and more – on thousands of internet-connected devices. You can watch as much as you want, whenever you want, without a single ad – all for one low monthly price. There’s always something new to discover, and new TV shows and movies are added every week!</p>
+            </div>
+          </div>
+          <div class="card mt-5" style="background-color: #2b2828ad;">
+            <div class="card-header d-flex">
+              <h3>2.</h3>
+              <h3 class="px-5">How much does Streamflix cost?</h3>
+            </div>
+            <div class="card-body">
+              <p class="card-text">Watch Streamflix on your smartphone, tablet, Smart TV.  all for one fixed monthly fee. Plans range from ₹ 10 to ₹ 20 a month. No extra costs, no contracts.</p>
+            </div>
+          </div>
+          <div class="card mt-5" style="background-color: #2b2828ad;">
+            <div class="card-header d-flex">
+              <h3>3.</h3>
+              <h3 class="px-5">Where can i watch?</h3>
+            </div>
+            <div class="card-body">
+              <p class="card-text">Watch anywhere, anytime. Sign in with your Streamflix on any internet-connected device that offers the Streamflix app, including smart TVs, smartphones, tablets, streaming media players and game consoles. You can also download your favourite shows with the Android, Smart Android TV. Use downloads to watch while you’re on the go and without an internet connection. Take Streamflix with you anywhere.</p>
+            </div>
+          </div>
+          <div class="card mt-5" style="background-color: #2b2828ad;">
+            <div class="card-header d-flex">
+              <h3>4.</h3>
+              <h3 class="px-5">How do i cancel?</h3>
+            </div>
+            <div class="card-body">
+              <p class="card-text">Streamflix is flexible. There are no annoying contracts and no commitments. You can easily cancel your account online in two clicks. There are no cancellation fees – start or stop your account anytime.</p>
+            </div>
+          </div>
+          <div class="card mt-5" style="background-color: #2b2828ad;">
+            <div class="card-header d-flex">
+              <h3>5.</h3>
+              <h3 class="px-5">What can i watch on Streamflix?</h3>
+            </div>
+            <div class="card-body">
+              <p class="card-text">Streamflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning originals, and more. Watch as much as you want, anytime you want</p>
+            </div>
+          </div>
+          <div class="card mt-5" style="background-color: #2b2828ad;">
+            <p class="card-header px-4">
+                LET'S GET STARTED
+            </p>
+            <div class="d-flex">
+                <div class="card-body">
+                    <h2 class="px-2" style="background: linear-gradient(to right, #21e2f3, #ff6b08, #cf23cf, #09b5cc);
+                    -webkit-text-fill-color: transparent;
+                    -webkit-background-clip: text;">Ready to entertain your self?</h2>
+                    <div class="d-flex">
+                    <p class="card-text pr-3">Premium Support</p>
+                    <p class="card-text">Cancel any time</p>
+                    </div>
+                </div>
+              {% for link in links %}
+              <a href="{{ link.downloadlink}}" class="btn" style="    margin-right: 15px;
+              background: linear-gradient(251deg, #c60cb0, #e60101);
+              height: 40px;
+              margin-top: 35px;">Download</a>
+              {% endfor %}
+            </div>
+          </div>
+
+    </div>
+
+{% endblock %}
+ 
