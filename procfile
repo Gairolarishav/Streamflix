@@ -1,1 +1,0 @@
-web: gunicorn Streamflix.wsgi --log-file -
