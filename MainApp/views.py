@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-from MainApp.models import links,action,anime,horror,romance
+from MainApp.models import links,action,anime,horror,romance,downloadpage
 
 
 # Create your views here.
@@ -65,3 +65,14 @@ def termsandservices(request):
         'links':link,
     }
     return render (request,"termsandservices.html",data)
+
+def download(request):
+    link=links.objects.all()
+    downloaddata=downloadpage.objects.all().order_by('-id')
+    data={
+        'title':"Download Page",
+        'links':link,
+        'downloaddata':downloaddata,
+    }
+    return render (request,"downloadpage.html",data)
+

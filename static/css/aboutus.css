@@ -62,20 +62,17 @@ body{
     .about-us{
         margin-top: 15%;
         padding: 0px 20px;
-    }
-    
+    } 
     .aboutus-title{
         width: 100%;
         color: white;
     }
     .aboutus-title h2{
         font-size: 1.5rem;
-    }
-    
-    
+    } 
     .about-us .card .card-header h3{
         font-size: 0.8rem;
-        padding-left: 10px !important;
+        padding-left: 5px !important;
     }
     .about-us .card .card-body h2{
         font-size: 0.9rem;

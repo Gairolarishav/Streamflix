@@ -1,12 +1,19 @@
 from django.db import models
+from tinymce.models import HTMLField
 
 # Create your models here.
 class links(models.Model):
     downloadlink=models.TextField()
+    downloadversion=models.TextField(null=True)
     telegramlink=models.TextField( null=True)
     facebooklink=models.TextField( null=True)
     instagramlink=models.TextField( null=True)
     twitterlink=models.TextField( null=True)
+
+class downloadpage(models.Model):
+    date=models.TextField()
+    changelog=models.TextField( null=True,default='Changelog')
+    changeslist=HTMLField( null=True)
 
 class action(models.Model):
     image=models.TextField()

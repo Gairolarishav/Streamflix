@@ -11,4 +11,5 @@ urlpatterns = [
     path('Aboutus', views.aboutus,name='aboutus'),
     path('Privacy', views.privacy,name='privacy'),
     path('Termsandservices', views.termsandservices,name='termsandservices'),
+    path('Download', views.download,name='download'),
 ]

@@ -15,6 +15,15 @@
 .streamflix-phone{
     width: 42%;
 }
+.response div .card{
+    background-color: #2b2828ad;
+}
+.card-body .card-title{
+    color: white !important;
+}
+.card-body .card-text{
+    color: #a7abb0 !important;
+}
 
 @media only screen and (max-width:700px) {
     .streamflix-phone{
@@ -49,3 +58,4 @@
     }
 
  }
+

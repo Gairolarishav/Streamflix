@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<!-- Download page -->
+    <div class="about-us mb-5">
+          
+          <div class="aboutus-title text-center">
+            {% for link in links %}
+            <a href="{{ link.downloadlink}}" class="btn downloadpage" style="font-size:1.5rem;border: 1px solid;
+            border-radius: 30px;background: linear-gradient(251deg, #c60cb0, #e60101);margin-top: 10px;">Download Now</a>
+            {% endfor %}
+            {% for link in links %}
+            <h2 class="text-center downloadpage-v">{{link.downloadversion}}</h2>
+            {% endfor %}
+          </div>
+          <h2 class="text-white downloadpage-title">Stay up to date with our news,ideas and updates</h2>
+          {% for data in downloaddata%}
+          <div class="card downloadpage-changes" style="background-color: #2b2828ad;">
+            <div class="card-header d-flex download-changes">
+              <h3 class='p-0'>{{data.date}}</h3>
+              <h3 class="pl-5">{{data.changelog}}</h3>
+            </div>
+            <div class="card-body changelist">
+                <ol class="px-3">
+                   <li class="text-white" style="text-decoration: none;">{{data.changeslist | safe }}</li>
+                </ol>
+            </div>
+          </div>
+          {% endfor %}
+<!-- Download page--end -->
+
+
+          <div class="card mt-5" style="background-color: #2b2828ad;">
+            <p class="card-header px-4">
+                LET'S GET STARTED
+            </p>
+            <div class="d-flex">
+                <div class="card-body">
+                    <h2 class="px-2" style="background: linear-gradient(to right, #21e2f3, #ff6b08, #cf23cf, #09b5cc);
+                    -webkit-text-fill-color: transparent;
+                    -webkit-background-clip: text;">Ready to entertain your self?</h2>
+                    <div class="d-flex">
+                    <p class="card-text pr-3">Premium Support</p>
+                    <p class="card-text">Cancel any time</p>
+                    </div>
+                </div>
+              {% for link in links %}
+              <a href="{{ link.downloadlink}}" class="btn" style="    margin-right: 15px;
+              background: linear-gradient(251deg, #c60cb0, #e60101);
+              height: 40px;
+              margin-top: 35px;">Download</a>
+              {% endfor %}
+            </div>
+          </div>
+
+    </div>
+
+{% endblock %}
+ 

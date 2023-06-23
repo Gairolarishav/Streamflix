@@ -1,0 +1,39 @@
+.downloadpage-v{
+    margin-top: 1.5rem !important;
+}
+.downloadpage-title{
+    margin-top: 1.5rem !important;
+}
+.downloadpage-changes{
+    margin-top: 3rem !important;
+}
+
+@media only screen and (max-width:768px) {
+    .downloadpage{
+        font-size: 1rem !important;
+    }
+    .downloadpage-v{
+        font-size: 1rem !important;
+        margin-top: 1rem !important;
+    }
+    .downloadpage-title{
+        font-size: 1rem !important;
+        margin-top: 1rem !important;
+    }
+    .downloadpage-changes{
+        font-size: 1rem !important;
+        padding: 0.75rem 0.1rem;
+    }
+    .downloadpage-changes h3{
+        font-size: 0.7rem !important;
+        padding-right: 20px !important;
+        padding-left: 0px !important;
+    }
+    .changelist{
+        padding: 1.2rem !important;
+        font-size: 0.7rem !important;
+    }
+    .downloadpage-changes{
+        margin-top: 2rem !important;
+    }
+}
